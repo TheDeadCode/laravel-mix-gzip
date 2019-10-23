@@ -39,7 +39,7 @@ class LaravelMixGzip {
     register(options = {}) {
         this.options = Object.assign(
             {
-                asset: '[path].gz[query]',
+                filename: '[path].gz[query]',
                 test: /\.(js|css|html|svg)$/,
                 algorithm: 'gzip',
                 minRatio: 0.8,
