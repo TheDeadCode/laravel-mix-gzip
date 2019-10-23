@@ -39,7 +39,6 @@ class LaravelMixGzip {
     register(options = {}) {
         this.options = Object.assign(
             {
-                enabled: mix.inProduction(),
                 asset: '[path].gz[query]',
                 test: /\.(js|css|html|svg)$/,
                 algorithm: 'gzip',
@@ -64,10 +63,6 @@ class LaravelMixGzip {
      * @return {Array|Object}
      */
     webpackPlugins() {
-        if (!this.options.enabled) {
-            return;
-        }
-
         return new CompressionPlugin(this.options);
     }
 
