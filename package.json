@@ -1,0 +1,18 @@
+{
+  "name": "laravel-mix-gzip",
+  "version": "1.0.0",
+  "description": "A wrapper around compression-webpack-plugin for Laravel Mix",
+  "main": "index.js",
+  "repository": "https://github.com/TheDeadCode/laravel-mix-gzip.git",
+  "author": "Felix Lebel",
+  "license": "MIT",
+  "peerDependencies": {
+    "laravel-mix": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "compression-webpack-plugin": "^3.0.0"
+  }
+}
